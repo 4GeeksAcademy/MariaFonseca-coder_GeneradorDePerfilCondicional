@@ -34,15 +34,15 @@ function render(variables = {}) {
             ${cover}
           <img src="${variables.avatarURL}" class="photo" />
 
-          <h1>${(variables.name ? variables.name : "Pon tú nombre") +
+          <h1>${(variables.name ? variables.name : "Pon tu nombre ") +
             (variables.lastName
               ? " " + variables.lastName
-              : "/ Pon tú apellido")}</h1>
-          <h2>${variables.role ? variables.role : "Selecciona tú role"}</h2>
-          <h3>${(variables.city ? variables.city : "Selecciona tú ciudad") +
+              : "/ Pon tu apellido")}</h1>
+          <h2>${variables.role ? variables.role : "Selecciona tu role"}</h2>
+          <h3>${(variables.city ? variables.city : "Selecciona tu ciudad") +
             (variables.country
               ? ", " + variables.country
-              : " , Selecciona tú país")}</h3>
+              : " , Selecciona tu país")}</h3>
           <ul class="${variables.socialMediaPosition}">
             <li><a href="https://twitter.com/${
               variables.twitter
@@ -70,7 +70,8 @@ window.onload = function() {
     // if includeCover is true the algorithm should show the cover image
     includeCover: true,
     // this is the image's url that will be used as a background for the profile cover
-    background: "https://images.unsplash.com/photo-1511974035430-5de47d3b95da",
+    background:
+      "https://e.rpp-noticias.io/xlarge/2023/01/06/251625_1371339.jpg",
     // this is the url for the profile avatar
     avatarURL: "https://randomuser.me/api/portraits/women/42.jpg",
     // social media bar position (left or right)
